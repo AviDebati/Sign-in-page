@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<table style="border: 2px solid black;">
+    <tr><th colspan="4">Details of all people</th></tr>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Username</th>
+        <th>Role</th>
+    </tr>
+  <% if (typeof usersArray !== 'undefined' && usersArray.length > 0) {%>
+    <%for (var i = 0; i < usersArray.length; i++) { %>
+        <tr>
+      <td><%= usersArray[i].name %></td>
+        <td><%= usersArray[i].address %></td>
+        <td><%= usersArray[i].username %></td>
+        <td><%= usersArray[i].role %></td>
+    </tr>
+    <%}%>
+  <% } %>
+</table>
+<%- include('partials/footer') %>

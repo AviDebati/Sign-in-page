@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+
+
+<div class="maindiv userdetails">
+  <div class="login">
+  <table>
+    <tr><th colspan="3"><h1>User Details</h1></th></tr>
+    <tr>
+      <td>Role:</td>
+        <td colspan="2"><%=role%></td>
+      </tr>
+    <tr>
+      <td>Name:</td>
+      <td colspan="2" id="name">
+        <%=name%>
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td colspan="2" id="address"><%=address%></td>
+    </tr>
+    <tr>
+      <td>Username:</td>
+      <td colspan="2" id="username"><%=username%></td>
+    </tr>
+    
+    
+    <tr>
+      <% if(role==="Admin"){ %>
+      <th colspan="2"><a class="btn btn-primary btn-dark" href="/alluser" role="button">All User</a></th>
+      <% } %>
+      <th colspan="2"><a class="btn btn-primary btn-dark" href="/logout" role="button">Logout</a></th>
+      
+    </tr>
+  </table>
+</div>
+
+
+<%- include('partials/footer') %>

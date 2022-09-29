@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+  
+
+
+
+<form action="/register" method="POST" autocomplete="off">
+<div class="maindiv ">
+  <div class="login">
+  <table>
+    <tr><td colspan="3"><h1>New Registration</h1></td></tr>
+    <tr>
+      <td>Name</td>
+      <td colspan="2"><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td colspan="2"><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td colspan="2"><input type="text" name="username"></td>
+    </tr>
+    <tr>
+    <td>Password</td>
+      <td colspan="2"><input type="password" name="password"></td>
+    </tr>
+    <tr>
+      <td>Role</td>
+        <td colspan="2">
+          <select name="role">
+            <option>User</option>
+            <option>Admin</option>
+          </select>
+          </td>
+      </tr>
+      
+    <tr>
+      <td><button type="submit" class="btn btn-dark">Save</button></td>
+      <td><button type="reset" class="btn btn-dark">Refresh</button></td>
+    </tr>
+  </table>
+</div>
+</form>
+<%- include('partials/header') %>

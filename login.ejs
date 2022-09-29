@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+
+
+<form action="/login" method="POST" autocomplete="off">
+<div class="maindiv">
+  <div class="login">
+  <table>
+    <tr><td colspan="3"><h1>Login</h1></td></tr>
+    <tr>
+      <td>Username</td>
+      <td colspan="2"><input type="text" placeholder="Username" name="username"></td>
+    </tr>
+    <td>Password</td>
+      <td colspan="2"><input type="password" placeholder="Password" name="password"></td>
+    <tr>
+      <td><button type="submit" class="btn btn-dark">Login</button></td>
+      <td><button type="reset" class="btn btn-dark"> Refresh</button></td>
+      <td><a class="btn btn-dark" href="/register" role="button">Register</a></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</form>
+
+
+<%- include('partials/footer') %>
